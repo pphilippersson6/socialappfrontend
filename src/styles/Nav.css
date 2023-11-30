@@ -1,0 +1,21 @@
+.nav {
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+}
+
+.nav-user-img{
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+.nav-followers{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    margin: 20px 0;
+}
