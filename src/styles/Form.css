@@ -1,0 +1,80 @@
+.form {
+    width:600px;
+    height:auto;
+    margin:5rem auto;
+    padding:100px 50px;
+    border:1px solid #ccc;
+    background:#f3f3f3;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.form .form-heading {
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#333;
+    margin-bottom:10px;
+}
+
+.input label {
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+    margin-bottom:5px;
+}
+
+.input input[type="text"], .input input[type="password"] , .input input[type="email"] {
+    width:80%;
+    padding:8px;
+    border:1px solid #ccc;
+    background:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+.input input[type="text"]:focus, .input input[type="password"]:focus {
+    border:1px solid #3399cc;
+}
+
+.input input[type="textarea"] {
+    width:80%;
+    height:100px;
+    padding:8px;
+    border:1px solid #ccc;
+    background:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+
+input[type="submit"] {
+    width:50%;
+    padding:8px;
+    border:1px solid #3399cc;
+    background:#3399cc;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.input input[type="submit"]:hover {
+    background:#2288bb;
+}
+
+.input{
+    margin-bottom:10px;
+}
+
+@media (max-width: 600px) {
+    .form {
+        width:100%;
+    }
+}
