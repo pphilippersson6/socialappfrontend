@@ -1,4 +1,4 @@
-const BASE='https://socialappbackend-44bc0968e05f.herokuapp.com/api/';
+const BASE='https://socialappbackend-44bc0968e05f.herokuapp.com/api';
 export const sendGetRequest = async (endpoint) => {
     let headers = {
         'Content-Type': 'application/json',
