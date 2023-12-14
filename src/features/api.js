@@ -3,7 +3,7 @@ export const sendGetRequest = async (endpoint) => {
     let headers = {
         'Content-Type': 'application/json',
     }
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('token')
     if(token && token !== 'undefined'){
         headers['Authorization'] = `Bearer ${token}`;
     }
