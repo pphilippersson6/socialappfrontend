@@ -21,12 +21,13 @@ This website has the following pages
     A post page
 
 #Installation
-    Step 1: Clone the repository
-    Step 2: Navigate to the project directory
-    Step 3: Install dependencies
-    npm install
-    Step 4: Start the development server
-    npm start
+Step 1: Clone the repository
+
+Step 2: Navigate to the project directory
+Step 3: Install dependencies
+npm install
+Step 4: Start the development server
+npm start
 
 #usage
 Below are the steps to interact with the application:
@@ -53,3 +54,20 @@ The `reportWebVitals` function measures the following web performance metrics:
 - Cumulative Layout Shift (CLS)
 - First Contentful Paint (FCP)
 - Time to First Byte (TTFB)
+
+# React application API utility function
+
+This section describes the API utility functions used within the React application to handle HTTP requests to the backend API.
+
+API Utility Functions
+sendGetRequest
+Description: This function sends a GET request to the specified API endpoint.
+
+sendPostRequest
+Description: Sends a POST request to the specified API endpoint with provided data.
+
+sendPutRequest
+Description: Sends a PUT request to the specified API endpoint with provided data.
+
+# Note
+Token Handling: These functions handle token-based authentication by checking and including the token from local storage in requests, except for specific endpoints like login where the token is not required.
