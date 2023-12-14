@@ -71,3 +71,25 @@ Description: Sends a PUT request to the specified API endpoint with provided dat
 
 # Note
 Token Handling: These functions handle token-based authentication by checking and including the token from local storage in requests, except for specific endpoints like login where the token is not required.
+
+# deployment to heroku
+Create Heroku app
+
+heroku create socialappfrontend
+
+Set Buildpack: Specify the buildpack for your React app
+
+heroku create --buildpack https://github.com/mars/socialappfrontend.git
+ 
+Add environment variables
+
+Environment Variables: If your app requires environment variables (e.g., API keys), set them in your Heroku app's settings through the Heroku Dashboard or using the CLI.
+
+heroku config:set KEY=VALUE -a socialappfrontend
+
+Push to Heroku: Deploy your app to Heroku
+git push heroku master
+
+
+
+
