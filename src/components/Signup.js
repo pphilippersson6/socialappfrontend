@@ -1,10 +1,10 @@
 import React from 'react';
 import { sendPostRequest } from '../features/api';
 import Form from './Form';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Signup() {
-  const history = useHistory();
+  const history = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
