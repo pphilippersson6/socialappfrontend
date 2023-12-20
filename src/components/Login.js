@@ -1,3 +1,4 @@
+import React from 'react';
 import "../App.css";
 import { sendPostRequest } from "../features/api";
 import Form from "./Form";

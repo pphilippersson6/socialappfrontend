@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from "react";
 import { sendGetRequest, sendPostRequest } from "../features/api";
 import "../styles/Nav.css";
