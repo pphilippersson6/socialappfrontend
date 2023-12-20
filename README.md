@@ -1,95 +1,126 @@
-#Description
+# Social Posts App
 
-Social app allows user to share, like comment on posts. It also allows users to follow each other.s
-User
+![Frontpage]()
 
-    As a new user, I want to create an account using my email and a username I choose for myself and also a password so that I can have access to the website.
-    As a registered user, I want to use the credentials I created during registration to login into the website.
-    As a logged-in user, I want to be able to see all posts shared by people on the platform.
-    As a logged-in user, I want to create a post.
-    As a logged-in user, I should be able to like a post and comment on it.
-    As a logged-in user, I should be able to follow other users.
+## About 
+**Social Posts App** is a web application designed for posting, liking, and following. Users can explore posts, check creators' profiles, and read bios. The platform encourages users to share diverse content such as news, gaming, food, feelings, thoughts, and more!
 
-Pages
+# Table of Contents
+- [Project Purpose](#project-purpose)
+  - [Target Audience](#target-audience)
+- [UX](#ux)
+  - [Project Scope](#project-scope)
+  - [User Stories](#user-stories)
+- [Design](#design)
+  - [Website Structure](#website-structure)
+  - [Relational Database](#relational-database)
+  - [Design](#design-1)
+  - [Color Design](#color-design)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Features to Implement in the Future](#features-to-implement-in-the-future)
+  - [CRUD Operations](#crud-operations)
+- [Data Validation](#data-validation)
+- [Technologies and Libraries Used](#technologies-and-libraries-used)
+  - [Languages](#languages)
+  - [Database Platform and Cloud Storage](#database-platform-and-cloud-storage)
+- [Testing](#testing)
+  - [Introduction](#introduction)
+  - [Testing Accessibility and Performance](#testing-accessibility-and-performance)
+  - [Validator Testing](#validator-testing)
+  - [Lighthouse](#lighthouse)
+  - [Code Validation](#code-validation)
+- [Bugs during Development](#bugs-during-development)
+  - [Fixed Bugs and Solutions](#fixed-bugs-and-solutions)
+  - [Ongoing Bugs](#ongoing-bugs)
+- [Development and Deployment](#development-and-deployment)
+  - [Local Deployment](#local-deployment)
+  - [Deployment to Heroku](#deployment-to-heroku)
+  - [Libraries and Other Credits](#libraries-and-other-credits)
+    - [Images](#images)
+    - [Content](#content)
 
-This website has the following pages
+# Description
 
-    a sign up page
-    a login page
-    a home page
-    Profiles page
-    A post page
+The Social app allows users to share, like, and comment on posts. It also facilitates user following.
 
-#Installation
-Step 1: Clone the repository
+## User Stories
 
-Step 2: Navigate to the project directory
-Step 3: Install dependencies
-npm install
-Step 4: Start the development server
-npm start
+- As a new user, I want to create an account using my email, username, and password for access to the website.
+- As a registered user, I want to log in using my credentials.
+- As a logged-in user, I want to see all posts shared by others.
+- As a logged-in user, I want to create a post.
+- As a logged-in user, I should be able to like and comment on posts.
+- As a logged-in user, I should be able to follow other users.
 
-#usage
-Below are the steps to interact with the application:
-Login page
-Upon accessing the application, users will be directed to the login page.
+## Pages
 
-    Enter valid credentials (username and password) to log in.
-    Users will receive feedback based on the correctness of the entered credentials.
-    Incorrect credentials will prompt an error message, while successful login attempts will grant access to a "Dashboard" or another restricted area.
+This website includes:
 
-post page
-This React application represents a basic social media platform, featuring functionalities such as posting content, liking posts, and sorting posts based on different criteria. It utilizes React components to manage the rendering of posts and user interactions.
+- Sign-up page
+- Login page
+- Home page
+- Profiles page
+- Post page
 
-Features
+# Installation
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-    User Authentication: Login functionality to identify users and their posts.
-    Post Creation: Users can create posts by providing titles and content.
-    Interactive Post Footer: Post footer includes a "like" button and displays the number of likes for each post.
-    Search and Sort: Users can search for posts and sort them based on date.
+# Usage
+
+To interact with the application:
+
+1. **Login page:**
+    - Enter valid credentials (username and password).
+    - Users will receive feedback based on the correctness of the entered credentials.
+    - Incorrect credentials will prompt an error message.
+
+2. **Post page:**
+    - Represents a basic social media platform.
+    - Features post creation, liking, and sorting based on different criteria.
+
+## Features
+
+- **User Authentication:** Login functionality for user identification.
+- **Post Creation:** Users can create posts with titles and content.
+- **Interactive Post Footer:** Includes a "like" button and displays the number of likes for each post.
+- **Search and Sort:** Users can search for posts and sort them based on date.
+
 ## Web Vitals
-The `reportWebVitals` function measures the following web performance metrics:
+
+The `reportWebVitals` function measures web performance metrics:
+
 - Largest Contentful Paint (LCP)
 - First Input Delay (FID)
 - Cumulative Layout Shift (CLS)
 - First Contentful Paint (FCP)
 - Time to First Byte (TTFB)
 
-# React application API utility function
+# React Application API Utility Functions
 
-This section describes the API utility functions used within the React application to handle HTTP requests to the backend API.
+This section describes API utility functions for handling HTTP requests to the backend API.
 
-API Utility Functions
-sendGetRequest
-Description: This function sends a GET request to the specified API endpoint.
+## API Utility Functions
 
-sendPostRequest
-Description: Sends a POST request to the specified API endpoint with provided data.
+### `sendGetRequest`
+Sends a GET request to the specified API endpoint.
 
-sendPutRequest
-Description: Sends a PUT request to the specified API endpoint with provided data.
+### `sendPostRequest`
+Sends a POST request to the specified API endpoint with provided data.
+
+### `sendPutRequest`
+Sends a PUT request to the specified API endpoint with provided data.
 
 # Note
-Token Handling: These functions handle token-based authentication by checking and including the token from local storage in requests, except for specific endpoints like login where the token is not required.
 
-# deployment to heroku
-Create Heroku app
+**Token Handling:** These functions manage token-based authentication by checking and including the token from local storage in requests, except for specific endpoints like login where the token is not required.
 
-heroku create socialappfrontend
+# Deployment to Heroku
 
-Set Buildpack: Specify the buildpack for your React app
-
-heroku create --buildpack https://github.com/mars/socialappfrontend.git
- 
-Add environment variables
-
-Environment Variables: If your app requires environment variables (e.g., API keys), set them in your Heroku app's settings through the Heroku Dashboard or using the CLI.
-
-heroku config:set KEY=VALUE -a socialappfrontend
-
-Push to Heroku: Deploy your app to Heroku
-git push heroku master
-
-
-
-
+1. Create Heroku app: `heroku create socialappfrontend`
+2. Set Buildpack: Specify the buildpack for your React app: `heroku create --buildpack https://github.com/mars/socialappfrontend.git`
+3. Add environment variables: Set them in your Heroku app's settings through the Heroku Dashboard or using the CLI: `heroku config:set KEY=VALUE -a socialappfrontend`
+4. Push to Heroku: Deploy your app to Heroku: `git push heroku master`
