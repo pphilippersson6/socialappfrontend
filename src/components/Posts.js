@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { useEffect, useState } from "react";
 import { sendGetRequest, sendPostRequest } from "../features/api";
 import "../styles/Posts.css";
